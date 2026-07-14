@@ -154,7 +154,7 @@ Well done, it's correct!
 
 ## Output Screenshot
 
-![Experiment 1 Output](image.png)
+![Experiment 1 Output](output.png)
 
 ## Image Explanation
 
