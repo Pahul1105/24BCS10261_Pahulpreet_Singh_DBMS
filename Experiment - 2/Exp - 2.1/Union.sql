@@ -1,1 +1,5 @@
-
+ SELECT *
+ FROM Arts
+ UNION
+ SELECT *
+ FROM Science;
