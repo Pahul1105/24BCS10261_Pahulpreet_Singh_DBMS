@@ -6,11 +6,11 @@ UID: 24BCS10261
 
 ## Aim
 
-To find the common fruit names present in both the `fruit` and `inventory` tables using the `INTERSECT` operator.
+To find the common fruit names from the `fruit` and `inventory` tables using the `INTERSECT` operator.
 
 ## Question
 
-The **INTERSECT** operator combines two `SELECT` statements, but only returns the rows that are common to both `SELECT` statements.
+The `INTERSECT` operator combines two `SELECT` statements, but only returns the rows that are common to both `SELECT` statements.
 
 Below is the format for the same:
 
@@ -20,16 +20,17 @@ INTERSECT
 SELECT * FROM table_2;
 ```
 
-### Task
-
 Consider a supermarket database.
 
-- Table `fruit` has the list of all fruits available in the market (few of them could be out of stock).
-- Table `inventory` has the updated list of items in the supermarket.
+Table `fruit` has the list of all fruits available in the market (few of them could be out of stock).
+
+Table `inventory` has the updated list of items in the supermarket.
 
 Write a query to find the list of fruits available in the supermarket. (`f_name` column has the name of the fruits and `inv_name` has the name of the items in the inventory. You are supposed to output the name of the fruits.)
 
 ## SQL Queries Used
+
+### Find Common Fruits Using INTERSECT
 
 ```sql
 SELECT f_name
@@ -63,7 +64,7 @@ Excellent work!
 
 ## Image Explanation
 
-The screenshot shows the SQL editor with the `INTERSECT` query executed on the `fruit` and `inventory` tables. The output panel displays only the fruit names that are common to both tables, confirming that the `INTERSECT` operation was executed successfully.
+The screenshot shows the SQL editor with the `INTERSECT` query executed on the `fruit` and `inventory` tables. The output panel displays the fruit names that are common to both tables, confirming that the query executed successfully.
 
 ## Result
 
