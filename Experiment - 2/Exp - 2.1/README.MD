@@ -74,12 +74,6 @@ SELECT *
 FROM Science;
 ```
 
-## Output
-
-```
-Well done, it's correct!
-```
-
 ## Output Screenshot
 
 ![UNION Output](union.png)
