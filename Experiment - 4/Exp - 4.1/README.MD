@@ -159,20 +159,3 @@ The screenshot shows the SQL queries executed using `INNER JOIN` and `LEFT JOIN`
 ## Result
 
 The required data was successfully retrieved from the multiple tables using `INNER JOIN` and `LEFT JOIN` operations.
-### Problems
-
-**1. Customers and Orders:** List the `customer_name` and `order_date` for all customers who have placed orders.
-
-**2. All Customers and Their Orders:** List all customer names and their corresponding `product_name` from orders, if they have any. Include customers even if they haven't placed any orders.
-
-**3. Find Products and Their Orders:** Display Product Name and the `order_date` from all the products that are ordered.
-
-## SQL Queries Used
-
-### 1. Customers and Orders
-
-```sql
-SELECT c.customer_name, o.order_date
-FROM customers c
-INNER JOIN orders o
-ON c.customer_id = o.customer_id;
