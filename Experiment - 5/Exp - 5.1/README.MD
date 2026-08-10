@@ -42,18 +42,8 @@ The `Orders` table has the following fields:
 ### Calculate American Cuisine Revenue Percentage
 
 ```sql
-SELECT
-    ROUND(
-        (
-            SUM(CASE
-                WHEN cuisine = 'American' THEN price
-                ELSE 0
-            END)
-            / SUM(price)
-        ) * 100,
-        2
-    ) AS American_Revenue
-FROM Orders;
+select ROUND((100*(SUM(case when cuisine= 'American' THEN price ELSE 0 END))/SUM(price)),2) 
+AS American_Revenue FROM Orders;
 ```
 
 ## Output
