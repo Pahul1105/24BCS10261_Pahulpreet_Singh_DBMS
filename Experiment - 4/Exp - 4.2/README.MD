@@ -1,4 +1,4 @@
-# Experiment 34.2
+# Experiment 4.2
 
 Name: Pahulpreet Singh
 
