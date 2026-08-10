@@ -58,7 +58,6 @@ AS American_Revenue FROM Orders;
 
 ## Output Screenshot
 
-outpu
 
 ## Image Explanation
 
