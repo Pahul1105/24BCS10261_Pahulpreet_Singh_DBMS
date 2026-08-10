@@ -87,7 +87,7 @@ SELECT
 FROM student AS s1
 INNER JOIN student AS s2
 ON s1.Department = s2.Department
-WHERE s1.St_id <> s2.St_id;
+WHERE s1.St_id != s2.St_id;
 ```
 
 ### 2. Find Students Having the Same Favorite Course
@@ -100,7 +100,7 @@ SELECT
 FROM student AS s1
 INNER JOIN student AS s2
 ON s1.Course_id = s2.Course_id
-WHERE s1.St_id <> s2.St_id
+WHERE s1.St_id != s2.St_id
 ORDER BY s1.Course_id;
 ```
 
