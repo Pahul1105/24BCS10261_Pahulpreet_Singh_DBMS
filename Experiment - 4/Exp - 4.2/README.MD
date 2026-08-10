@@ -1,5 +1,4 @@
-````markdown
-# Experiment X
+# Experiment 3.5
 
 Name: Pahulpreet Singh
 
@@ -17,12 +16,13 @@ We've learned that by default SQL removes the rows which doesn't match while joi
 
 However, if we wish to join two tables whose rows doesn't match, we can do that using **LEFT JOIN**.
 
-When two tables are joined using `LEFT JOIN`, and if the rows don't match:
+When two tables are joined using `LEFT JOIN`, and if the rows don't match,
 
-- All the rows in the first table (left) will be kept as such.
-- Whenever a row doesn't have a corresponding row in the second table (right), those columns will be kept blank (`NULL`).
+All the rows in the first table (left) will be kept as such and
 
-Below is the query to join the table `customer` and `order` using `LEFT JOIN`:
+Whenever a row doesn't have a corresponding row in the second table (right), those columns will be kept blank.
+
+Below is the query to join the table `customer` and `order` using `LEFT JOIN`
 
 ```sql
 SELECT *
@@ -43,7 +43,7 @@ Write a query to do the following:
 #### INNER JOIN
 
 | St_id | St_Name | Department | Course_id | Course_id | Course_Name | Credits | Prof_id |
-|------:|---------|------------|-----------|-----------|-------------|--------:|--------:|
+|-------|---------|------------|-----------|-----------|-------------|---------|---------|
 | 1001 | John Smith | Computer Science | CS101 | CS101 | Introduction to Computer Science | 3 | 2001 |
 | 1002 | Emily Brown | History | HIS102 | HIS102 | World History II | 3 | 2004 |
 | 1003 | David Lee | Mathematics | MAT202 | MAT202 | Linear Algebra | 2 | 2002 |
@@ -52,12 +52,16 @@ Write a query to do the following:
 #### LEFT JOIN
 
 | St_id | St_Name | Department | Course_id | Course_id | Course_Name | Credits | Prof_id |
-|------:|---------|------------|-----------|-----------|-------------|--------:|--------:|
+|-------|---------|------------|-----------|-----------|-------------|---------|---------|
 | 1001 | John Smith | Computer Science | CS101 | CS101 | Introduction to Computer Science | 3 | 2001 |
 | 1002 | Emily Brown | History | HIS102 | HIS102 | World History II | 3 | 2004 |
 | 1003 | David Lee | Mathematics | MAT202 | MAT202 | Linear Algebra | 2 | 2002 |
 | 1004 | Sarah Johnson | English | ENG201 | ENG201 | Advanced Writing | 4 | 2003 |
 | 1005 | Michael Chen | Biology | BIO103 | NULL | NULL | NULL | NULL |
+
+### Common doubts
+
+Why use LEFT JOIN over regular JOIN?
 
 ## SQL Queries Used
 
@@ -112,7 +116,7 @@ on student.Course_id=course.Course_id;
 
 ## Output Screenshot
 
-![Experiment X Output](leftjoins.png)
+![Experiment 3.5 Output](leftjoins.png)
 
 ## Image Explanation
 
@@ -125,5 +129,3 @@ The `LEFT JOIN` retains all records from the `student` table. For `Michael Chen`
 ## Result
 
 The `student` and `course` tables were successfully joined using both `INNER JOIN` and `LEFT JOIN`. The `INNER JOIN` returned only matching records, while the `LEFT JOIN` retained all students and displayed `NULL` values for the unmatched course record.
-````
-
