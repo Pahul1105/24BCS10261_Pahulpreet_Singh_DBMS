@@ -61,17 +61,18 @@ SELECT tweet_id
 FROM Tweets
 WHERE LENGTH(content) > 15;
 
-## Output
+### Output
 Plaintext
 +----------+
 | tweet_id |
 +----------+
 | 2        |
 +----------+
-## Output Screenshot
+
+### Output Screenshot
 ![Experiment 5.2 Output](invalidtweets.png)
 
-## Image Explanation
+### Image Explanation
 The screenshot shows the SQL query executed on the Tweets table. The LENGTH() function is used to calculate the number of characters in the content column, and the WHERE condition filters tweets whose content length is greater than 15. The output displays the ID of the invalid tweet.
 
 ## Result
