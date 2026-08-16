@@ -56,8 +56,6 @@ The `Tweets` table has the following fields:
 
 ## SQL Queries Used
 
-### Find Invalid Tweets
-
 ```sql
 SELECT tweet_id
 FROM Tweets
