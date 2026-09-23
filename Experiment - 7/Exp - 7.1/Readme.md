@@ -55,3 +55,24 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Salary is zero. Increment not possible.');
 END;
 /
+```
+
+## Output
+
+```text
+Salary is zero. Increment not possible.
+
+PL/SQL procedure successfully completed.
+```
+
+## Output Screenshot
+
+![Experiment 7 Task 1 Output](image.png)
+
+## Image Explanation
+
+The screenshot shows an explicit cursor fetching employee IDs and salaries from the `employee` table. The cursor increases salaries by 10% until it encounters employee 2, whose salary is zero. The user-defined `salary_zero` exception is raised, and the message `Salary is zero. Increment not possible.` is displayed.
+
+## Result
+
+The explicit cursor successfully processed the employee records, and the user-defined exception handled the zero-salary condition by displaying the appropriate message.
