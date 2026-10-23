@@ -1,8 +1,8 @@
-# Experiment 10 - Task 2
+# Experiment 10.2
 
-Name: ABHINEET
+Name: Pahulpreet Singh
 
-UID: 24BCS10039
+UID: 24BCS10261
 
 ## Aim
 
